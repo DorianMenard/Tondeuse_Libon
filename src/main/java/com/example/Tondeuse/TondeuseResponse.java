@@ -7,7 +7,7 @@ public class TondeuseResponse {
     private List<String> results = new ArrayList<>();
 
     public void addTondeuseResult(Tondeuse tondeuse) {
-        String result = String.format("x: %d , y: %d / %s", tondeuse.getX(), tondeuse.getY(), tondeuse.getOrientation());
+        String result = String.format("%s :  x: %d , y: %d / %s", tondeuse.getId(), tondeuse.getX(), tondeuse.getY(), tondeuse.getOrientation());
         this.results.add(result);
     }
 

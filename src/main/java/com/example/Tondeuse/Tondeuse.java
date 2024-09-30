@@ -3,13 +3,15 @@ package com.example.Tondeuse;
 import java.util.List;
 
 public class Tondeuse {
+    private String id;
     private int x;
     private int y;
     private char orientation;
     private Pelouse Pelouse;
     private List<Character> actions;
 
-    public Tondeuse(int x, int y, char orientation, com.example.Tondeuse.Pelouse pelouse, List<Character> actions) {
+    public Tondeuse(String id, int x, int y, char orientation, com.example.Tondeuse.Pelouse pelouse, List<Character> actions) {
+        this.id = id;
         this.x = x;
         this.y = y;
         this.orientation = orientation;
@@ -47,6 +49,13 @@ public class Tondeuse {
         }
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public List<Character> getActions() {
         return actions;
